@@ -17,6 +17,7 @@ public class ShowerDAOImpl implements ShowerDAO {
 	@PersistenceContext
 	private EntityManager em;
 
+	@Override
 	public Shower findById(Integer id) {
 		
 		return em.find(Shower.class, id);
@@ -42,17 +43,23 @@ public class ShowerDAOImpl implements ShowerDAO {
 	public boolean destroy() {
 		return false;
 	}
-
-	@Override
-	public Shower findByAddress(String address) {
-		return em.find(Shower.class, address);
-	}
+//
+//	@Override
+//	public Shower findByAddress(String address) {
+//		return em.find(Shower.class, address);
+//	}
 
 	@Override
 	public Shower createShower(Shower shower) {
 		em.persist(shower);
 		return shower;
 	}
+
+@Override
+public Shower findByAddress(String address) {
+	// TODO Auto-generated method stub
+	return null;
+}
 
 //	@Override
 //	public boolean createShower(Shower shower) {

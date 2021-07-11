@@ -22,7 +22,7 @@
 					<th>City</th>
 					<th>Price</th>
 				</tr>
-				<c:forEach items="${showers}}" var="s">
+				<c:forEach items="${showers}" var="s">
 					<tr>
 						<td>${s.id}</td>
 						<td>${s.address}</td>

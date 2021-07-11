@@ -28,9 +28,9 @@ public class ShowerController {
 	}
 
 	@RequestMapping(path = "getShower.do", method = RequestMethod.GET)
-	public String searchById(Model model, Integer showerId) {
+	public String findById(Model model, Integer id) {
 		List<Shower> showers = new ArrayList<>();
-		showers.add(dao.findById(showerId));
+		showers.add(dao.findById(id));
 		model.addAttribute("showers", showers);
 		return "TableResults";
 	}

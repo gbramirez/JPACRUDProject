@@ -3,6 +3,7 @@ package com.skilldistillery.showers.data;
 import com.skilldistillery.showers.entities.Shower;
 
 public interface ShowerDAO {
+	
 	public Shower findById(Integer id);
 	
 	public Shower findByAddress(String address);

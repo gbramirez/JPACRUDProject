@@ -16,7 +16,7 @@
 	<br>
 
 	<form action="getShower.do" method="GET">
-		Enter Shower ID: <input type="text" name="showerId" size="12" /> <input
+		Enter Shower ID: <input type="text" name="id" size="12" /> <input
 			type="submit" value="Search by ID" />
 	</form>
 	<br>
