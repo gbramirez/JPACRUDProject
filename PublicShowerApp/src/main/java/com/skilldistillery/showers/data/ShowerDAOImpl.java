@@ -13,25 +13,20 @@ import com.skilldistillery.showers.entities.Shower;
 @Service
 @Transactional
 public class ShowerDAOImpl implements ShowerDAO {
-	private EntityManagerFactory emf = Persistence.createEntityManagerFactory("PublicShowerPU");
+
 	@PersistenceContext
 	private EntityManager em;
 
-	@Override
-	public Shower findById(int id) {
-
-		System.out.println(em.find(Shower.class, id));
+	public Shower findById(Integer id) {
+		
 		return em.find(Shower.class, id);
 	}
 
-	@Override
-	public Shower create(Shower shower) {
-//		EntityManager em = emf.createEntityManager();
-		
-		
-		
-		return shower;
-	}
+//	@Override
+//	public Shower create(Shower shower) {
+//		
+//		return shower;
+//	}
 
 	@Override
 	public Shower update(int id, Shower shower) {
@@ -47,5 +42,22 @@ public class ShowerDAOImpl implements ShowerDAO {
 	public boolean destroy() {
 		return false;
 	}
+
+	@Override
+	public Shower findByAddress(String address) {
+		return em.find(Shower.class, address);
+	}
+
+	@Override
+	public Shower createShower(Shower shower) {
+		em.persist(shower);
+		return shower;
+	}
+
+//	@Override
+//	public boolean createShower(Shower shower) {
+//		// TODO Auto-generated method stub
+//		return false;
+//	}
 
 }

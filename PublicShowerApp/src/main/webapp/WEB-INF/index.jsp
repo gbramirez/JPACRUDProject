@@ -21,15 +21,15 @@
 	</form>
 	<br>
 
-	<h3>Search for shower by address</h3>
+<!-- 	<h3>Search for shower by address</h3>
 	<br>
 
 	<form action="addressSearch.do" method="GET">
-		Enter an address: <input type="text" name="address" size="12" /> <input
+		Enter an address: <input type="text" name="showerAddress" size="12" /> <input
 			type="submit" value="Search By Address" /> <br>
 	</form>
 	<br>
-
+ -->
 	<h3>Add a shower to database</h3>
 	<br>
 

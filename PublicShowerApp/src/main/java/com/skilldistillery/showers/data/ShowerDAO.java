@@ -3,9 +3,11 @@ package com.skilldistillery.showers.data;
 import com.skilldistillery.showers.entities.Shower;
 
 public interface ShowerDAO {
-	Shower findById(int id);
+	public Shower findById(Integer id);
 	
-	public Shower create(Shower shower);
+	public Shower findByAddress(String address);
+	
+	public Shower createShower(Shower shower);
 	
 	Shower update(int id, Shower shower);
 	
@@ -13,4 +15,8 @@ public interface ShowerDAO {
 	
 	boolean destroy();
 
-}
+//	boolean createShower(boolean shower);
+
+	}
+
+
