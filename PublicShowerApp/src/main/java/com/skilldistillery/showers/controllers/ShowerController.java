@@ -73,4 +73,19 @@ public class ShowerController {
 		redir.addFlashAttribute("shower", shower);
 		return "redirect:updateShowerForm.do";
 	}
+	
+	@RequestMapping(path = "deleteShower.do", method = RequestMethod.POST)
+	public String deleteShower(RedirectAttributes redir, int id) {
+		boolean deleted = true;
+		boolean contains = dao.destroy(id);
+		redir.addFlashAttribute("deleted", deleted);
+		redir.addFlashAttribute("contains", contains);
+		return "redirect:deleteShower.do";
+	}
+	
+	@RequestMapping(path = "deleteShower.do", method = RequestMethod.GET)
+	public String deleteShowerGet(Shower shower) {		
+		return "results";
+	}
+	
 }

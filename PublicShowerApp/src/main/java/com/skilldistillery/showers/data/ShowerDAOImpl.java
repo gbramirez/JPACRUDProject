@@ -36,8 +36,16 @@ public class ShowerDAOImpl implements ShowerDAO {
 
 	@Override
 	public boolean destroy(int id) {
-		return false;
-	}
+		Shower removeShower = em.find(Shower.class, id);
+		em.remove(removeShower);
+		if(removeShower != null) {
+			return false;
+		}
+			else {
+				return true;
+			}
+		}
+	
 
 	@Override
 	public boolean destroy() {

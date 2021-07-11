@@ -21,7 +21,7 @@
 	</form>
 	<br>
 
-<!-- 	<h3>Search for shower by address</h3>
+	<!-- 	<h3>Search for shower by address</h3>
 	<br>
 
 	<form action="addressSearch.do" method="GET">
@@ -39,20 +39,29 @@
 		shower price: <input type="text" name="price" size="12" /> <input
 			type="submit" value="submit updates" /> <br>
 	</form>
-	
-	<a href="updateShower.do"><button>Click here to update a shower</button></a>
+
+<!-- 	<a href="updateShower.do"><button>Click here to update a
+			shower</button></a> -->
 	<br>
-	
+
 	<h3>Update a shower</h3>
 	<form action="updateShower.do" method="POST">
-		Enter Shower ID: <input type="text" name="id" size="12" value="${shower.id}" />
-		Enter Shower Address: <input type="text" name="address" size="12" value="${shower.address}"/>
-		Enter Shower City: <input type="text" name="city" size="12" value="${shower.city}"/>
-		Enter Shower Price: <input type="text" name="price" size="12" value="${shower.price}"/>
-		
-		<input type="submit" value="submit updates" /> <br>
+		Enter Shower ID: <input type="text" name="id" size="12"
+			value="${shower.id}" /> Enter Shower Address: <input type="text"
+			name="address" size="12" value="${shower.address}" /> Enter Shower
+		City: <input type="text" name="city" size="12" value="${shower.city}" />
+		Enter Shower Price: <input type="text" name="price" size="12"
+			value="${shower.price}" /> <input type="submit"
+			value="submit updates" /> <br>
 	</form>
-	
+
+	<h3>Delete a shower</h3>
+	<form action="deleteShower.do" method="POST">
+		Enter Shower ID to be removed: <input type="text" name="id" size="12"
+			value="${shower.id}" /> <input type="submit" value="submit deletion" />
+		<br>
+	</form>
+
 
 </body>
 </html>

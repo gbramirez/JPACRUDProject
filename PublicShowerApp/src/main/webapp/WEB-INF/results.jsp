@@ -23,9 +23,9 @@
 				</c:otherwise>
 			</c:choose>
 		</c:if>
-		<c:if test="${deleteShower}">
+		<c:if test="${deleted}">
 			<c:choose>
-				<c:when test="${containsShower}">
+				<c:when test="${contains}">
 					<h2>The shower has been removed as requested.</h2>
 				</c:when>
 				<c:otherwise>
