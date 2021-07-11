@@ -46,6 +46,6 @@
 			</c:choose>
 		</c:if>
 
-
+<a href="home.do"><button>Home</button></a>
 
 	</div>

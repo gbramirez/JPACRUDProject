@@ -16,6 +16,10 @@ public interface ShowerDAO {
 	
 	boolean destroy();
 
+	Shower updateShower(Shower shower);
+
+	
+	
 //	boolean createShower(boolean shower);
 
 	}

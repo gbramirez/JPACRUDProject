@@ -28,4 +28,7 @@
 		</tr>
 	</table>
 </body>
+
+<a href="home.do"><button>Home</button></a>
+
 </html>

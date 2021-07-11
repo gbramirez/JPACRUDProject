@@ -57,4 +57,20 @@ public class ShowerController {
 	public String createShowerGet(Shower shower) {
 		return "results";
 	}
+
+	@RequestMapping(path = "updateShower.do")
+	public String updateShower(Model model, Shower shower) {
+		shower = dao.updateShower(shower);
+		model.addAttribute("shower", shower);
+		return "UpdateShower";
+	}
+
+	@RequestMapping(path = "updateShowerForm.do")
+	public String updateShower(RedirectAttributes redir, Shower shower) {
+		boolean editShower = true;
+		shower = dao.updateShower(shower);
+		redir.addFlashAttribute("editShower", editShower);
+		redir.addFlashAttribute("shower", shower);
+		return "redirect:updateShowerForm.do";
+	}
 }

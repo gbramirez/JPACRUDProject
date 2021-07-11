@@ -27,5 +27,8 @@
 			<td>${createdShower.city}</td>
 		</tr>
 	</table>
+	
+	<a href="home.do"><button>Home</button></a>
+	
 </body>
 </html>

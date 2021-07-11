@@ -37,5 +37,8 @@
 		</c:otherwise>
 	</c:choose>
 	<br>
+	
+	<a href="home.do"><button>Home</button></a>
+	
 </body>
 </html>

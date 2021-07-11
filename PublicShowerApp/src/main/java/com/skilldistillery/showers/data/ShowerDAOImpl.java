@@ -67,4 +67,15 @@ public Shower findByAddress(String address) {
 //		return false;
 //	}
 
+@Override
+public Shower updateShower (Shower shower) {
+	Shower managedShower = em.find(Shower.class, shower.getId());
+	
+	if(managedShower != null) {
+		managedShower.setAddress(shower.getAddress());
+		managedShower.setCity(shower.getCity());
+		managedShower.setPrice(shower.getPrice());
+	}
+	return managedShower;
+}
 }
