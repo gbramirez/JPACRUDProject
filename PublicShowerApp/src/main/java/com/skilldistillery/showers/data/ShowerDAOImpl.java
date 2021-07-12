@@ -1,8 +1,9 @@
 package com.skilldistillery.showers.data;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
@@ -85,5 +86,15 @@ public Shower updateShower (Shower shower) {
 		managedShower.setPrice(shower.getPrice());
 	}
 	return managedShower;
+}
+
+@Override
+public List<Shower> findAllShowers() {
+
+	List<Shower> showers = new ArrayList<>();
+	String jpql = "SELECT s FROM Shower s";
+	showers = em.createQuery(jpql, Shower.class).getResultList();
+	
+	return showers;
 }
 }

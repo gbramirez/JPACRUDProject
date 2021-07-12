@@ -88,4 +88,11 @@ public class ShowerController {
 		return "results";
 	}
 	
+	@RequestMapping(path = "allShowers.do")
+	public String showAllShowers(Model model) {
+		List<Shower> showers = dao.findAllShowers();
+		model.addAttribute("showers", showers);
+		return "results";
+	}
+	
 }

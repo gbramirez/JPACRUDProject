@@ -7,6 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="images/faviconshower.ico">
 <title>Results</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
 				<c:when test="${not empty shower}">
 					<h2>The shower was successfully added to the database.</h2>
 					<a href="getShower.do?id=${shower.id}"><button>View
-							new shower info</button></a>
+							New Shower Info</button></a>
 				</c:when>
 				<c:otherwise>
 					<h2>The shower could not be added to the database.</h2>
@@ -39,13 +41,26 @@
 				<c:when test="${not empty shower}">
 					<h2>The shower has been edited.</h2>
 					<a href="getShower.do?id=${shower.id}"><button>View
-							shower changes.</button></a>
+							Shower Changes.</button></a>
 				</c:when>
 				<c:otherwise>
 					<h2>The shower could not be edited as requested.</h2>
 				</c:otherwise>
 			</c:choose>
 		</c:if>
+	</div>
+	<div>
+		<table>
+			<c:forEach items="${showers}" var="s">
+				<h2>All Showers in Database</h2>
+				<tr>
+					<td>${s.id}</td>
+					<td>${s.address}</td>
+					<td>${s.city}</td>
+					<td>${s.price}</td>
+				</tr>
+			</c:forEach>
+		</table>
 	</div>
 	<br>
 	<a href="home.do"><button>Home</button></a>

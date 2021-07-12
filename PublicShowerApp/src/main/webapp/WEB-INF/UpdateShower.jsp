@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+ <link rel="icon" type="image/png" sizes="32x32" href="images/faviconshower.ico">
 <title>Update Shower</title>
 </head>
 <body>

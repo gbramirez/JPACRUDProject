@@ -7,9 +7,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Showers</title>
+<title>Shower App</title>
 <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/faviconshower.ico">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="images/faviconshower.ico">
 </head>
 <body>
 	<%-- <p>${shower} </p> --%>
@@ -24,7 +25,8 @@
 			Enter Shower ID: <input type="text" name="id" size="12" /> <input
 				type="submit" value="Search by ID" />
 		</form>
-		<br> <br>
+		<br> <a href="allShowers.do"><button>View All
+				Showers</button></a> <br>
 		<hr>
 	</div>
 
@@ -45,9 +47,9 @@
 		<br>
 
 		<form action="newShower.do" method="POST">
-			Enter shower address: <input type="text" name="address" size="12" />
-			Enter shower city: <input type="text" name="city" size="12" /> Enter
-			shower price: <input type="text" name="price" size="12" /> <input
+			Enter Shower Address: <input type="text" name="address" size="12" />
+			Enter Shower City: <input type="text" name="city" size="12" /> Enter
+			Shower Price: <input type="text" name="price" size="12" /> <input
 				type="submit" value="Submit Updates" /> <br>
 		</form>
 
@@ -66,11 +68,11 @@
 		<form class="update-form" action="updateShower.do" method="POST">
 			Enter Shower ID: <input type="text" name="id" size="12"
 				value="${shower.id}" /> Enter Shower Address: <input type="text"
-				name="address" size="12" value="${shower.address}" /><br>Enter Shower
-			City: <input type="text" name="city" size="12" value="${shower.city}" />
-			Enter Shower Price: <input type="text" name="price" size="12"
-				value="${shower.price}" /> <br> <input type="submit"
-				value="Submit Updates" />
+				name="address" size="12" value="${shower.address}" /><br>Enter
+			Shower City: <input type="text" name="city" size="12"
+				value="${shower.city}" /> Enter Shower Price: <input type="text"
+				name="price" size="12" value="${shower.price}" /> <br> <input
+				type="submit" value="Submit Updates" />
 		</form>
 		<hr>
 		<h3>Delete a shower</h3>

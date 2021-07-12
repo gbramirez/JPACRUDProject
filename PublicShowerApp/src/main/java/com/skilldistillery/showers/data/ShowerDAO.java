@@ -1,5 +1,7 @@
 package com.skilldistillery.showers.data;
 
+import java.util.List;
+
 import com.skilldistillery.showers.entities.Shower;
 
 public interface ShowerDAO {
@@ -17,6 +19,8 @@ public interface ShowerDAO {
 	boolean destroy();
 
 	Shower updateShower(Shower shower);
+
+	public List<Shower> findAllShowers();
 
 	
 	
