@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
 <title>Search Showers by ID</title>
 </head>
 <body>

@@ -6,6 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
 <title>Results</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
 	<br>
 	<c:choose>
 		<c:when test="${not empty showers[0]}">
-			<h3>Results</h3>
+			<h1>Results</h1>
 			<table>
 				<tr>
 					<th>ID</th>

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Meriweather', sans-serif;
+	background-color: #7DEDFF
+}
+
+h1 {
+	font-family: 'Sacramento', cursive;
+	color: #7C83FD;
+}
+
+h2 {
+	font-family: 'Sacramento';
+}
+
+h3 {
+	font-family: 'Sacramento';
+}
+
+hr {
+	width: 85%;
+}
+
+/* ***CLASSES*** */
+.top-container {
+	background-color: #88FFF7;
+	position: relative;
+	padding-top: 15px;
+	margin-bottom: 0;
+}
+
+.middle-container {
+	margin-top: 0;
+	background-color: #7DEDFF;
+	margin-bottom: 0;
+	line-height: 2;
+	font-weight: bold;
+	font-family: 'Sacramento';
+}
+
+.bottom-container {
+	margin-top: 0;
+	background-color: #96BAFF;
+	line-height: 2;
+	font-weight: bold;
+	font-family: 'Sacramento';
+}
+
+.update-shower-form {
+	line-height: 2;
+	font-weight: bold;
+	font-family: 'Sacramento';
+	border: solid #96BAFF 5px;
+	border-radius: 5px;
+}
+
+/* .update-form {
+	text-align: left;
+} */
+table, td {
+	background-color: #88FFF7;
+	border: solid #D8B384 2px;
+	border-radius: 5px;
+	color: #5E454B;
+	margin: 0 auto 0 auto;
+	padding: 5px;
+	font-weight: bold;
+	font-family: 'Sacramento';
+}
+
+th {
+	background-color: #96BAFF;
+	border: solid #D8B384 2px;
+	border-radius: 5px;
+	color: #5E454B;
+	margin: 0 auto 0 auto;
+	padding: 5px;
+	line-height: 2;
+	font-weight: bold;
+	font-family: 'Sacramento';
+}

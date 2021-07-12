@@ -6,11 +6,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
 <title>Results</title>
 </head>
 <body>
-	<div>
+	<div class="result-screen">
 		<c:if test="${createShower}">
 			<c:choose>
 				<c:when test="${not empty shower}">
@@ -24,9 +24,9 @@
 			</c:choose>
 		</c:if>
 		<c:if test="${contains}">
-		<h1>is deleted</h1>
+			<h1>The shower has been removed from the database.</h1>
 			<%-- <c:choose> --%>
-				<%-- <c:when test="${shower}">
+			<%-- <c:when test="${shower}">
 					<h2>The shower has been removed as requested.</h2>
 				</c:when>
 				<c:otherwise>
@@ -46,7 +46,6 @@
 				</c:otherwise>
 			</c:choose>
 		</c:if>
-
-<a href="home.do"><button>Home</button></a>
-
 	</div>
+	<br>
+	<a href="home.do"><button>Home</button></a>
