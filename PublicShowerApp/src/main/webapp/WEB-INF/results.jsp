@@ -23,15 +23,16 @@
 				</c:otherwise>
 			</c:choose>
 		</c:if>
-		<c:if test="${deleted}">
-			<c:choose>
-				<c:when test="${contains}">
+		<c:if test="${contains}">
+		<h1>is deleted</h1>
+			<%-- <c:choose> --%>
+				<%-- <c:when test="${shower}">
 					<h2>The shower has been removed as requested.</h2>
 				</c:when>
 				<c:otherwise>
 					<h2>The shower could not be removed from the database.</h2>
 				</c:otherwise>
-			</c:choose>
+		<%-- 	 </c:choose> --%>
 		</c:if>
 		<c:if test="${editShower}">
 			<c:choose>

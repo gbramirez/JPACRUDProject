@@ -38,7 +38,7 @@ public class ShowerDAOImpl implements ShowerDAO {
 	public boolean destroy(int id) {
 		Shower removeShower = em.find(Shower.class, id);
 		em.remove(removeShower);
-		if(removeShower != null) {
+		if(em.contains(removeShower)) {
 			return false;
 		}
 			else {
